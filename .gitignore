@@ -1,4 +1,5 @@
 __pycache__/
-data/processed/*
+data/*
 .mypy_cache/
 .venv
+access-web-dashboard/node_modules
