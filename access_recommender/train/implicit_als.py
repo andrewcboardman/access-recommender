@@ -32,6 +32,8 @@ def main():
         if recommended_title != item_query:
             print(f"{recommended_title}: score {r_score}")
 
+    model_als.save("models/als.model")
+
 
 if __name__ == "__main__":
     main()
