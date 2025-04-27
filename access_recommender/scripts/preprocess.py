@@ -40,7 +40,7 @@ def main():
     df = pd.read_csv("./data/raw/Access_to_Work_Cost_Weighted_2000.csv")
     df.columns = ["user_id", "condition_group", "job_sector", "item", "cost", "notes"]
 
-    df['item'] = df['item'].str.split(",")
+    df['item'] = df['item'].str.split(", ")
     df = df.explode("item")
 
     df["rating"] = np.random.randint(1, 5, size=len(df))  # Example ratings
